@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>digitalOcean</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -11,22 +12,52 @@
   <body class="debug">
     <!-- #site_header -->
     <header id="site_header">
-      <!-- nav del sito - vedi component bootstrap -->
+      <!-- nav a manina -->
       <nav>
-
-      </nav>
-      
-      <!-- anche per il jumbotron vedi il component -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <img src="assets/img/topnav_logo.png" alt="digitalOcean logo"> 
+            </div>
+            <div class="col-lg-6 text-center">
+              <a href="">Products <i class="fas fa-chevron-down"></i></a>
+              <a href="">Customers</a>
+              <a href="">Community <i class="fas fa-chevron-down"></i></a>
+              <a href="">Pricing</a>
+            </div>
+            <div class="col-lg-4 text-right">
+              <a href="">Docs</a>
+              <a href="">Support <i class="fas fa-chevron-down"></i></a>
+              <a href="">Login</a>
+              <a href="" class="btn">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </nav>  
+      <!-- jumbotron a manina -->
       <div class="header_bottom">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
               <div class="claim">
                 <h1>The simpliest cloud platform for developers & teams</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laudantium ullam laboriosam nisi nemo natus.</p>
+                <p class="lead">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
               </div>
             </div>
-            <div class="col-lg-5"></div>
+            <div class="col-lg-5">
+              <div class="signup_form text-center">
+                <h2>
+                  Deploy your app in seconds.<br>
+                  <span>Get started now.</span>
+                </h2>
+                <!-- qui ci va il mini-form, vedi components di B / o cmq un tag form come wrap -->
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <button type="submit" class="mail_account btn-block">Create your account</button>
+                <!-- quello sotto non sono sicuro che sia un bottone submit... più un link a bottone mii sa -->
+                <button type="submit" class="google_account btn-block">Sign up with google</button> 
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -36,30 +67,311 @@
     <!-- #_site_main -->
     <main id="_site_main">
       <section id="customers">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <span class="lead">INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</span>
+            </div>
+            <div class="col-lg-12">
+              <ul class="brands">
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+              </ul> 
+            </div>
+            <div class="col-lg-12">
+              <a href="#">View customers stories ></a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="deploy">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>Deploy and scale seamlessly</h2>
+              <p class="lead">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-lg-offset-1">
+              <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+              </ul>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-6">
+                  cluster
+                </div>
+                <div class="col-lg-6">
+                  optimized
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="design">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h1>designed for developers</h1>
+              <p class="lead">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+              <a href=""><i class="fas fa-chevron-left"></i></a>
+              <img src="assets/img/design_example.jpg" alt="example">
+              <a href=""><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="col-lg-12 text-center">
+              <h5>Create compute servers in 55 seconds or less.</h5>
+              <div class="dots">
+                <a href=""><i class="fas fa-circle"></i></a>
+                <a href=""><i class="far fa-circle"></i></a>
+                <a href=""><i class="far fa-circle"></i></a>
+                <a href=""><i class="far fa-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>  
       </section>
 
       <section id="features">
-
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>The future your business needs</h2>
+            </div>
+            <div class="col-lg-4">
+              <img src="assets/img/features/pricing.svg" alt="">
+              <h4>Predictable pricing</h4>
+              <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+              <a href="#">Pricing ></a>
+            </div>
+            <div class="col-lg-4">
+              <img src="assets/img/features/pricing.svg" alt="">
+              <h4>Predictable pricing</h4>
+              <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+              <a href="#">Pricing ></a>
+            </div>
+            <div class="col-lg-4">
+              <img src="assets/img/features/pricing.svg" alt="">
+              <h4>Predictable pricing</h4>
+              <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+              <a href="#">Pricing ></a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="regions"></section>
-      <section id="dev_teams"></section>
-      <section id="get_started"></section>
+      <section id="regions">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>Service your customers around the world from 12 regions.</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row-no-gutters">
+                <div class="col-lg-2">
+                  <ul>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                  </ul>
+                </div>
+                <div class="col-lg-8">
+                  <ul>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <ul>
+                    <li>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row-no-gutters">
+                <div class="col-lg-2">
+                  <ul>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                    <li>AMS2</li>
+                  </ul>
+                </div>
+                <div class="col-lg-8">
+                  <ul>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                    <li>Amsterdam, Netherlands</li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <ul>
+                    <li>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                      <a href="">Test speed ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dev_teams">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h1>Development teams love DigitalOcean</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+              <a href=""><i class="fas fa-chevron-left"></i></a>
+              <div class="team_story">
+                <img src="assets/img/rockerbox.png" alt="">
+                <p class="lead">"We have been able to make scaling the technical infrastructure of out business cost effective and efficient."</p>
+                <h5><strong>Rick O'Toole</strong></h5>
+                <span>Co-founder and CTO</span>
+                <a href="#">Read story ></a>
+              </div>
+              <a href=""><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="col-lg-12 text-center">
+              <div class="dots">
+                <a href=""><i class="fas fa-circle"></i></a>
+                <a href=""><i class="far fa-circle"></i></a>
+                <a href=""><i class="far fa-circle"></i></a>
+                <a href=""><i class="far fa-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+
+      <section id="get_started">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>Get started now</h2>
+              <button type="button" class="btn">Create your account</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- /#_site_main -->
 
     <!-- /#site_footer -->
     <footer id="site_footer">
-      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/footer_logo.svg" alt="">
+            <h5>&copy; 2018 DigitalOcean, LLC. All rights reserved.</h5>
+            <h5>Proudly made in NY</h5>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="col-lg-2">
+            <h5>company</h5>
+            <ul>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h5>products</h5>
+            <ul>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h5>community</h5>
+            <ul>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h5>support</h5>
+            <ul>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+              <li><a href="">link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- /#site_footer -->
   </body>

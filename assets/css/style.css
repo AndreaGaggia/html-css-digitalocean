@@ -1,10 +1,81 @@
 .debug [class*="col-"] {
-  height: 300px;
-  background-color: pink;
+  /* height: 300px; */
+  /* background-color: pink; */
   border: 1px solid red;
 }
 
+/* ===============
+   GLOBAL SETTINGS 
+   =============== */
 body {
-  background-color: aquamarine;
   font-family: 'Lato', sans-serif;
+}
+
+nav {
+  height: 50px;
+  line-height: 50px;
+}
+
+main {
+  background-color: violet;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* HEADER
+   ============================= */
+nav a {
+  color: #031B4F;
+}
+nav a:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.header_bottom {
+  background-image: url(../img/jumbo_bg.svg);
+  color: #fff;
+}
+.header_bottom h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.signup_form {
+  background: #fff;
+  color: #031B4F;
+}
+.signup_form h2 > span {
+  color: #006AFF;
+}
+   
+
+/* MAIN
+   ============================= */
+
+
+/* FOOTER
+   ============================= */
+
+nav img {
+  max-width: 80%;
+  height: auto;
+}
+
+#design img, #dev_teams .team_story {
+  width: 80%;
+  height: auto;
+}
+#dev_teams .team_story {
+  display: inline-block;
+  background-color: white;
+}
+#dev_teams .team_story > span {
+  display: block;
+}
+
+footer {
+  background: #010e28;
 }
