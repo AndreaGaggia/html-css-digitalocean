@@ -1,7 +1,7 @@
 .debug [class*="col-"] {
   /* height: 300px; */
   /* background-color: pink; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ===============
@@ -38,17 +38,49 @@ nav a:not(:last-of-type) {
 .header_bottom {
   background-image: url(../img/jumbo_bg.svg);
   color: #fff;
+  padding: 60px 0;
 }
 .header_bottom h1 {
-  font-size: 50px;
+  font-size: 54px;
   font-weight: bold;
+  padding-right: 13%;
 }
+
+/* mini form */
 .signup_form {
   background: #fff;
   color: #031B4F;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+.signup_form > *:not(h1) {
+  margin-bottom: 10px;
+}
+.signup_form h2 {
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: bold;
 }
 .signup_form h2 > span {
   color: #006AFF;
+}
+.signup_form > button {
+  background: #fff;
+  border: none;
+  padding: .5rem;
+  border-radius: 3px;
+}
+.signup_form > button.google_account {
+  background-image: url(../img/google.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: left;
+  box-shadow: 1px 1px 1px grey;
+}
+.signup_form > button.mail_account {
+  background-color: #4285F4;
+  color: #fff;
+  border: 1px solid blue;
 }
    
 
