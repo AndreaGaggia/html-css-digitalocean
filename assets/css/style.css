@@ -192,13 +192,16 @@ nav span#hamb {
 #deploy ul > li > a {
   color: #5B6987;
 }
+#deploy .description {
+  height: 150px;
+}
 
 /* design */
-#design {
+#design, #dev_teams {
   background-color: #F3F5F9;
 }
 #design img, #dev_teams .team_story {
-  width: 80%;
+  width: 66%;
   height: auto;
 }
 a.angle_left, a.angle_right {
@@ -227,22 +230,81 @@ a.angle_right {
 }
 
 /* regions */
-#regions {
+#regions, #get_started {
   background-image: linear-gradient(0deg, #001e9a, #0048c5);
 }
+#regions h2, #get_started h2 {
+  color: #fff;
+}
+#regions li, #regions a {
+  font-size: 11px;
+}
+#regions li {
+  padding: .8rem;
+}
+#regions li:not(:last-child) {
+  border-bottom: 2px solid white;
+}
 
+#regions .city_code > li {
+  color: #fff;
+}
+#regions .city_name > li {
+  color: lightgrey;
+}
+#regions .test_link > li > a {
+  color: aquamarine;
+}
 
-/* FOOTER
-   ============================= */
-
-
-#dev_teams .team_story {
+/* dev_teams */
+#dev_teams a.angle_left, #dev_teams a.angle_right, #dev_teams .team_story {
   display: inline-block;
+  vertical-align: middle;
+  /* il mistero del vertical-align... se lo do al contenitore non funziona, devo darlo a tutti gli elementi all'interno del contenitore, ovviamente elementi con caratteristiche inline - in questo caso ho convertito tutto a inline-block */
+}
+
+#dev_teams h2 {
+  margin-bottom: 70px;
+}
+#dev_teams .team_story {
   background-color: white;
 }
 #dev_teams .team_story > span {
   display: block;
 }
+#dev_teams .team_story > h5 {
+  margin-bottom: 0;
+}
+#dev_teams .team_story > img {
+  width: 45%;
+  margin-bottom: 20px;
+}
+#dev_teams .team_story > p {
+  line-height: 3rem;
+}
+#dev_teams .team_story > a {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #006AFF;
+}
+#dev_teams .dots {
+  margin: 20px;
+}
+
+/* get_started */
+#get_started button {
+  color: #006AFF;
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+
+
+
+
+/* FOOTER
+   ============================= */
 
 footer {
   background: #010e28;
