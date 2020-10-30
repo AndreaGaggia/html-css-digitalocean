@@ -300,14 +300,75 @@ a.angle_right {
 }
 
 
-
-
-
 /* FOOTER
    ============================= */
 
 footer {
   background: #010e28;
+}
+footer ul a {
+  color: #B6BCC9;
+  line-height: 2.5rem;
+}
+footer a.social, footer h5:first-of-type {
+  color: #A7B2C1;
+}
+footer a.social {
+  font-size: 2rem;
+  padding-right: 10px;
+}
+footer h5:first-of-type {
+  margin-bottom: 0;
+}
+footer h5:last-of-type {
+  color: #5B6987;
+  margin-top: 3px;
+}
+footer img.footer_logo {
+  width: 45px;
+}
+footer h4 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* chatbot */
+.chat_bot {
+
+}
+span.text_box {
+  display: inline-block;
+  color: #031B4F;
+  background-color: white;
+  border: 1px solid;
+  width: 290px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.chat_bot div.avatar {
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  background-image: url(../img/duck-icon.png);
+  background-size: cover;
+  border: 1px solid yellow;
+  border-radius: 3px;
+  position: relative;
+}
+span.text_box, .chat_bot div.avatar {
+  vertical-align: bottom;
+}
+.chat_bot div.avatar > span.badge {
+  background-color: red;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  width: 22px;
 }
 
 
