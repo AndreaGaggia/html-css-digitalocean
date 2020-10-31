@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>digitalOcean</title>
+    <title>DigitalOcean</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body class="debug">
+  <body>
     <!-- #site_header -->
     <header id="site_header">
       <!-- nav a manina -->
       <nav>
         <div class="container">
           <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-4">
-              <img src="assets/img/topnav_logo.png" alt="digitalOcean logo"> 
+            <div class="col-md-2 col-sm-4 col-xs-4">
+              <img src="assets/img/topnav_logo.png" alt="digitalOcean logo">
             </div>
-            <div class="menu_center col-lg-6 text-center">
+            <div class="menu_center col-md-6 text-center">
               <a href="">Products <i class="fas fa-chevron-down"></i></a>
               <a href="">Customers</a>
               <a href="">Community <i class="fas fa-chevron-down"></i></a>
               <a href="">Pricing</a>
             </div>
-            <div class="menu_right col-lg-4 col-md-9 col-sm-8 text-right">
+            <div class="menu_right col-md-4 col-sm-8 col-xs-8 text-right">
               <a href="">Docs</a>
               <a href="">Support <i class="fas fa-chevron-down"></i></a>
               <a href="">Login</a>
@@ -34,28 +34,28 @@
             </div>
           </div>
         </div>
-      </nav>  
+      </nav>
       <!-- jumbotron a manina -->
       <div class="header_bottom">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-7">
+            <div class="col-md-7 col-sm-7">
               <div class="claim">
                 <h1>The simpliest cloud platform for developers & teams</h1>
                 <p class="lead">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
               </div>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-5">
+            <div class="col-md-5 col-sm-5">
               <div class="signup_form text-center">
                 <h2>
                   Deploy your app in seconds.<br>
                   <span>Get started now.</span>
                 </h2>
-                <!-- qui ci va il mini-form, vedi components di B / o cmq un tag form come wrap -->
+                <!-- qui ci va il mini-form, controlla necessità wrap con un tag form -->
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 <button type="submit" class="mail_account btn-block">Create your account</button>
-                <!-- quello sotto non sono sicuro che sia un bottone submit... più un link a bottone mii sa -->
+                <!-- quello di google credo sia più un link a bottone, non sta prendendo dati con gli input -->
                 <button type="submit" class="google_account btn-block">Sign up with google</button>
                 <span>By signing up you agree to the <a href="">Terms of Service</a>.</span>
               </div>
@@ -71,20 +71,20 @@
       <section id="customers">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-md-12 col-sm-12">
               <span class="title_like">INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</span>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-md-12 col-sm-12">
               <div class="brands">
                 <img src="assets/img/customers/docker.svg" alt="">
-                <img src="assets/img/customers/gitlab.svg" alt="">
+                <img class="no_mr" src="assets/img/customers/gitlab.svg" alt="">
                 <img src="assets/img/customers/slack.svg" alt="">
-                <img src="assets/img/customers/hashicorp.svg" alt="">
+                <img class="no_mr" src="assets/img/customers/hashicorp.svg" alt="">
                 <img src="assets/img/customers/hashicorp.svg" alt="">
                 <img src="assets/img/customers/splunk.svg" alt="">
-              </div> 
+              </div>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class=" col-md-12 col-sm-12">
               <a href="#">View customers stories ></a>
             </div>
           </div>
@@ -94,13 +94,13 @@
       <section id="deploy" class="py_50">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 col-sm-12 text-center">
               <h2 class="section_title">Deploy and scale seamlessly</h2>
-              <p class="section_p">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+              <p class="section_p mb_50">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-lg-offset-1">
+            <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
               <ul class="section_p">
                 <li><a href="">Deploy</a></li>
                 <li><a href="">Manage</a></li>
@@ -109,30 +109,30 @@
                 <li><a href="">Monitor</a></li>
               </ul>
             </div>
-            <div class="col-lg-7">
+            <div class="col-md-7 col-sm-7">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6 col-sm-6">
                   <div class="description">
                     <img src="assets/img/deploy/kublogoicon.svg" alt="">
                     <h4>Cluster deployments</h4>
                     <p class="t_small">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or diectly against our API.</p>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 col-sm-6">
                   <div class="description">
                     <img src="assets/img/deploy/dropletinboxicon.svg" alt="">
                     <h4>Optimize compute types</h4>
                     <p class="t_small">Get the compute resources you need with Standard or Optimized Droplets.</p>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 col-sm-6">
                   <div class="description">
                     <img src="assets/img/deploy/featured-AP-icon.svg" alt="">
                     <h4>One-click apps</h4>
                     <p class="t_small">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 col-sm-6">
                   <div class="description">
                     <img src="assets/img/deploy/stacksplusicon.svg" alt="">
                     <h4>Global availability</h4>
@@ -148,18 +148,18 @@
       <section id="design" class="py_50">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
               <h2 class="section_title">Designed for developers</h2>
               <p class="section_p mt_30 mb_50">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center my_10">
+            <div class="col-md-8 col-md-offset-2 text-center my_10">
               <a class="angle_left" href=""><i class="fas fa-angle-left"></i></a>
               <img src="assets/img/design_example.jpg" alt="example">
               <a class="angle_right" href=""><i class="fas fa-angle-right"></i></a>
             </div>
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
               <h5>Create compute servers in 55 seconds or less.</h5>
               <div class="dots">
                 <a href=""><i class="fas fa-circle"></i></a>
@@ -169,28 +169,28 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </section>
 
       <section id="features" class="py_50">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 text-center mb_30">
+            <div class="col-md-12 col-sm-12 text-center mb_30">
               <h2 class="section_title">The features your business needs</h2>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-sm-4">
               <img src="assets/img/features/pricing.svg" alt="">
               <h4>Predictable pricing</h4>
               <p class="t_small">Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
               <a href="#">Pricing ></a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-sm-4">
               <img src="assets/img/features/service.svg" alt="">
               <h4>World-class service</h4>
               <p class="t_small">Free round-the-clock technical support for all customers. You'll feel the love.</p>
               <a href="#">Support ></a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-sm-4">
               <img src="assets/img/features/reliable.svg" alt="">
               <h4>Reliable platform</h4>
               <p class="t_small">More than 100,000 developer teams worldwide trust DigitalOcean to suport their business with a 99.99% uptime SLA for all services.</p>
@@ -203,12 +203,13 @@
       <section id="regions" class="py_50">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
               <h2 class="section_title">Service your customers around the world from 12 regions.</h2>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="row-no-gutters">
-                <div class="col-lg-2">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <!-- non credo sia la soluzione ottimale in contesto realistico dato che c'è evidentemente una correlazione nei dati visualizzati in una riga - in questo senso andrebbe fatta una divisione per row, cioè una row per item geografico. Tuttavia nel contesto dell'esercitazione credo che sia una soluzione efficiente per via di una minore complicazione del codice - meno righe e meno indentazione. -->
                   <ul class="city_code">
                     <li>AMS2</li>
                     <li>AMS3</li>
@@ -218,7 +219,7 @@
                     <li>NYC1</li>
                   </ul>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-md-7 col-sm-7 col-xs-7">
                   <ul class="city_name">
                     <li>Amsterdam, Netherlands</li>
                     <li>Amsterdam, Netherlands</li>
@@ -228,7 +229,7 @@
                     <li>New York, USA</li>
                   </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-md-3 col-sm-3 col-xs-3">
                   <ul class="test_link text-right">
                     <li><a href="">Test speed ></a></li>
                     <li><a href="">Test speed ></a></li>
@@ -240,9 +241,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="row-no-gutters">
-                <div class="col-lg-2">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                   <ul class="city_code">
                     <li>AMS2</li>
                     <li>AMS3</li>
@@ -252,7 +253,7 @@
                     <li>NYC1</li>
                   </ul>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-md-7 col-sm-7 col-xs-7">
                   <ul class="city_name">
                     <li>Amsterdam, Netherlands</li>
                     <li>Amsterdam, Netherlands</li>
@@ -262,7 +263,7 @@
                     <li>New York, USA</li>
                   </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-md-3 col-sm-3 col-xs-3">
                   <ul class="test_link text-right">
                     <li><a href="">Test speed ></a></li>
                     <li><a href="">Test speed ></a></li>
@@ -281,12 +282,12 @@
       <section id="dev_teams" class="py_50">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
               <h2 class="section_title">Development teams love DigitalOcean</h2>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center my_10">
+            <div class="col-md-8 col-md-offset-2 text-center my_10">
               <a class="angle_left" href=""><i class="fas fa-angle-left"></i></a>
               <div class="team_story py_50">
                 <img src="assets/img/rockerbox.png" alt="">
@@ -297,7 +298,7 @@
               </div>
               <a class="angle_right" href=""><i class="fas fa-angle-right"></i></a>
             </div>
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
               <div class="dots">
                 <a href=""><i class="fas fa-circle"></i></a>
                 <a href=""><i class="far fa-circle"></i></a>
@@ -305,13 +306,13 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </section>
 
       <section id="get_started" class="py_50">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-md-12 text-center">
               <h2 class="section_title">Get started now.</h2>
               <button type="button" class="btn">Create your account</button>
             </div>
@@ -325,7 +326,7 @@
     <footer id="site_footer" class="py_50">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-md-4 col-sm-12">
             <img class="footer_logo" src="assets/img/footer_logo.svg" alt="">
             <h5>&copy; 2018 DigitalOcean, LLC. All rights reserved.</h5>
             <h5>Proudly made in NY</h5>
@@ -335,7 +336,7 @@
             <a class="social" href=""><i class="fab fa-youtube"></i></a>
             <a class="social" href=""><i class="fab fa-linkedin"></i></a>
           </div>
-          <div class="col-lg-2">
+          <div class="col-md-2 col-sm-6">
             <h4>company</h4>
             <ul>
               <li><a href="">About</a></li>
@@ -350,7 +351,7 @@
               <li><a href="">Legal & Security</a></li>
             </ul>
           </div>
-          <div class="col-lg-2">
+          <div class="col-md-2 col-sm-6">
             <h4>products</h4>
             <ul>
               <li><a href="">Droplets</a></li>
@@ -366,7 +367,7 @@
               <li><a href="">Release Notes</a></li>
             </ul>
           </div>
-          <div class="col-lg-2">
+          <div class="col-md-2 col-sm-6">
             <h4>community</h4>
             <ul>
               <li><a href="">Tutorials</a></li>
@@ -381,7 +382,7 @@
               <li><a href="">Open Source</a></li>
             </ul>
           </div>
-          <div class="col-lg-2">
+          <div class="col-md-2 col-sm-6">
             <h4>support</h4>
             <ul>
               <li><a href="">Contact Support</a></li>
@@ -391,11 +392,26 @@
           </div>
         </div>
       </div>
-      <!-- chatbot qui -->
+      <!-- chatbot here -->
       <div class="chat_bot">
-        <span class="text_box">Can I help answer any questions you have about DigitalOcean?</span>
-        <div class="avatar">
-          <span class="badge">2</span>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <div class="row">
+                <div class="col-xs-12 col-md-1 col-md-push-11 avatar_container">
+                  <div class="avatar">
+                    <span class="badge">2</span>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-md-push-6 text_box_container">
+                  <div class="text_box">
+                    <p>Can I help answer any questions you have about DigitalOcean?</p>
+                    <span class="triangle"><i class="fas fa-caret-right"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,36 +1,4 @@
-.debug [class*="col-"] {
-  /* height: 300px; */
-  /* background-color: pink; */
-  /* border: 1px solid red; */
-}
-
-/* ===============
-   GLOBAL SETTINGS 
-   =============== */
-
-body {
-  font-family: 'Lato', sans-serif;
-}
-
-nav {
-  height: 50px;
-  line-height: 50px;
-}
-
-main {
-  /* background-color: violet; */
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-h4 {
-  color: #031B4F;
-  font-weight: bold;
-}
-
+/* UTILITY CLASSES */
 .section_title {
   color: #031B4F;
   font-weight: bold;
@@ -60,14 +28,34 @@ h4 {
   color: grey;
 }
 
+/* ===============
+   GLOBAL SETTINGS
+   =============== */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+nav {
+  height: 50px;
+  line-height: 50px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h4 {
+  color: #031B4F;
+  font-weight: bold;
+}
+
 
 /* HEADER
    ============================= */
 
+/* nav */
 nav img {
-  max-width: 80%;
-  height: auto;
-}   
+  height: 26px;
+}
 nav a {
   color: #031B4F;
 }
@@ -84,6 +72,7 @@ nav span#hamb {
   font-size: 2rem;
 }
 
+/* header_bottom */
 .header_bottom {
   background-image: url(../img/jumbo_bg.svg);
   background-color: #585e67;
@@ -148,7 +137,7 @@ nav span#hamb {
 }
 .signup_form > span {
   font-size: 1.2rem;
-}   
+}
 .signup_form > span > a {
   text-decoration: underline;
   color: #006AFF;
@@ -163,7 +152,7 @@ nav span#hamb {
   background-color: #F3F5F9;
   text-align: center;
   padding: 40px 0 30px;
-}   
+}
 #customers span.title_like {
   font-size: 1.5rem;
   font-weight: bold;
@@ -182,7 +171,7 @@ nav span#hamb {
 #customers a {
   font-size: 16px;
   color: #006AFF;
-}   
+}
 
 /* deploy */
 #deploy ul > li {
@@ -193,7 +182,10 @@ nav span#hamb {
   color: #5B6987;
 }
 #deploy .description {
-  height: 150px;
+  height: 180px;
+}
+#deploy .description img {
+  height: 38px;
 }
 
 /* design */
@@ -206,7 +198,7 @@ nav span#hamb {
 }
 a.angle_left, a.angle_right {
   font-size: 4rem;
-} 
+}
 a.angle_left {
   color: #5B6987;
   padding-right: 2%;
@@ -262,7 +254,6 @@ a.angle_right {
   vertical-align: middle;
   /* il mistero del vertical-align... se lo do al contenitore non funziona, devo darlo a tutti gli elementi all'interno del contenitore, ovviamente elementi con caratteristiche inline - in questo caso ho convertito tutto a inline-block */
 }
-
 #dev_teams h2 {
   margin-bottom: 70px;
 }
@@ -305,6 +296,7 @@ a.angle_right {
 
 footer {
   background: #010e28;
+  position: relative;
 }
 footer ul a {
   color: #B6BCC9;
@@ -335,48 +327,95 @@ footer h4 {
 
 /* chatbot */
 .chat_bot {
-
+  position: absolute;
+  bottom: 45px;
+  left: 22px;
 }
-span.text_box {
-  display: inline-block;
-  color: #031B4F;
-  background-color: white;
-  border: 1px solid;
-  width: 290px;
-  padding: 10px;
-  border-radius: 6px;
-}
-.chat_bot div.avatar {
-  display: inline-block;
-  height: 55px;
-  width: 55px;
-  background-image: url(../img/duck-icon.png);
-  background-size: cover;
-  border: 1px solid yellow;
-  border-radius: 3px;
+.avatar, .text_box {
   position: relative;
 }
-span.text_box, .chat_bot div.avatar {
-  vertical-align: bottom;
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/duck-icon.png);
+  background-size: cover;
+  border: 2px solid yellow;
+  border-radius: 3px;
+  margin-bottom: 15px;
 }
-.chat_bot div.avatar > span.badge {
-  background-color: red;
-  border: 3px solid white;
+.avatar > span.badge {
+  font-size: 11px;
+  width: 21px;
+  padding: 3px 2px;
   border-radius: 50%;
-  padding: 2px;
+  background-color: red;
+  border: 2px solid white;
   position: absolute;
   right: 0;
   top: 0;
   transform: translate(50%, -50%);
-  width: 22px;
+}
+
+.text_box {
+  background-color: #fff;
+  width: 290px;
+  padding: 8px;
+  border-right: 6px;
+}
+.text_box > p {
+  color: #031B4F;
+  margin: 0;
+}
+.text_box > span.triangle {
+  /* chiaramente la freccina è ad altezza becco ;) */
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  left: 99%;
+  bottom: 20%;
 }
 
 
 /* =============
-   MEDIA QUERIES 
+   MEDIA QUERIES
    ============= */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  /* immagini della sezione customers su 3 righe */
+  .brands > img {
+    width: 35%;
+    height: auto;
+  }
+  .brands > img.no_mr {
+    margin-right: 0;
+  }
+
+  /* fix distanziamento verticale tra le descrizioni per resa più fedele al modello */
+  #deploy .description {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  #deploy ul > li:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  /* le frecce dell'elemento tipo carosello scompaiono */
+  a.angle_left,
+  a.angle_right,
+  #dev_teams a.angle_left,
+  #dev_teams a.angle_right {
+    display: none;
+  }
+
+  /* fix distanziamento */
+  #features a {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+ }
+
+@media screen and (max-width: 991px) {
+  /* collasso di parte della nav e comparsa menu hamburger */
   nav .menu_center, nav .menu_right > a {
     display: none;
   }
@@ -386,8 +425,35 @@ span.text_box, .chat_bot div.avatar {
   nav span#hamb {
     display: inline-block;
   }
+}
 
+@media screen and (max-width: 1199px) {
+  /* fix grandezza titolo principale per resa fedele al modello */
   .header_bottom h1 {
     font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* regole per visualizzazione chatbot in modalità desktop fedele al modello */
+  .chat_bot {
+    right: 0;
+    bottom: 30px;
+  }
+  .avatar_container {
+    height: 56px;
+    position: relative;
+  }
+  .avatar {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .text_box_container {
+    position: relative;
+  }
+  .text_box {
+    position: absolute;
+    right: 0;
   }
 }
