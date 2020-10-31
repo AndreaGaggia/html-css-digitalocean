@@ -295,7 +295,7 @@ a.angle_right {
    ============================= */
 
 footer {
-  background: #010e28;
+  background: #031b4e;
   position: relative;
 }
 footer ul a {
@@ -360,6 +360,7 @@ footer h4 {
   background-color: #fff;
   width: 290px;
   padding: 8px;
+  border-radius: 4px;
   border-right: 6px;
 }
 .text_box > p {
@@ -379,6 +380,21 @@ footer h4 {
 /* =============
    MEDIA QUERIES
    ============= */
+
+@media screen and (max-width: 330px) {
+  #regions a {
+    font-size: 10px;
+  }
+  /* così si rompe a 308px però... cmq regge anche con l'iphone 3GS, dispositivo con la width più bassa nell'elenco di screensiz.es */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* affinamento regole di position per maggiore fedeltà al modello... anche se in questo intervallo elementi come chatbot e menu hamburger non sonon fissi per via del container */
+  .chat_bot {
+    left: 20px;
+    bottom: 45px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   /* immagini della sezione customers su 3 righe */
