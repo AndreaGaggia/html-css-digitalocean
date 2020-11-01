@@ -385,13 +385,12 @@ footer h4 {
 
 @media screen and (max-width: 330px) {
   #regions a {
-    font-size: 10px;
+    font-size: 10px; /* così si rompe a 308px però... cmq regge anche con l'iphone 3GS, dispositivo con la width più bassa nell'elenco di screensiz.es */
   }
-  /* così si rompe a 308px però... cmq regge anche con l'iphone 3GS, dispositivo con la width più bassa nell'elenco di screensiz.es */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* affinamento regole di position per maggiore fedeltà al modello... anche se in questo intervallo elementi come chatbot e menu hamburger non sonon fissi per via del container */
+  /* affinamento regole di positioning per maggiore fedeltà al modello... anche se in questo intervallo elementi come chatbot e menu hamburger non sonon fissi per via del container */
   .chat_bot {
     left: 20px;
     bottom: 45px;
@@ -421,7 +420,7 @@ footer h4 {
     display: inline-block;
     margin-bottom: 20px;
   }
- }
+}
 
 @media screen and (max-width: 991px) {
   /* collasso di parte della nav e comparsa menu hamburger */
